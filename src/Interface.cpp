@@ -21,7 +21,7 @@ void Interface::drawInterface() {
     }
     std::cout << std::endl;
     for (auto i{0}; i < COLS; i++) {
-        std::cout << "\\ /";
+        std::cout << " v ";
     }
     std::cout << std::endl;
     std::cout << std::endl;
