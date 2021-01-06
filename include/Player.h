@@ -4,6 +4,7 @@
 class Player {
     public:
         Player();
+        int play();
 };
 
 #endif
