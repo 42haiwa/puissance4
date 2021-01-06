@@ -1,5 +1,8 @@
 #include <iostream>
+#include "Interface.h"
 
 int main(void) {
-	std::cout << "Hello world!" << std::endl;
+	auto interface = Interface{};
+
+	std::cout << "Bienvenue au puissance 4 !" << std::endl;
 }
