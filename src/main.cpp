@@ -1,6 +1,12 @@
 #include <iostream>
 #include "Interface.h"
 
+/*
+ *		Task:
+ *			- Add play systeme
+ *			- Add game loop
+ */
+
 int main(void) {
 	auto interface = Interface{};
 
