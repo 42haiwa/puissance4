@@ -12,6 +12,7 @@ class Interface {
         static constexpr auto ROWS{6};
 
         std::array<std::array<std::string, COLS>, ROWS> grids;
+        
     public:
         Interface();
         void drawInterface();

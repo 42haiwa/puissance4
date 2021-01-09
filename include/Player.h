@@ -7,6 +7,7 @@
 class Player {
     private:
         std::string color{ANSI_COLOR_YELLOW};
+        
     public:
         Player();
         int play();
