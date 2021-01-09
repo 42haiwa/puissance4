@@ -2,6 +2,7 @@
 #define __INTERFACE__H__
 
 #include <array>
+#include <string>
 
 #include "constantes.h"
 
@@ -14,6 +15,7 @@ class Interface {
     public:
         Interface();
         void drawInterface();
+        void setChip(float const &, std::string const &);
 };
 
 #endif
