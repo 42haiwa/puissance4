@@ -19,7 +19,7 @@ int main(void) {
 
 	while (true) {
 		interface.drawInterface();
-		int position = player.play();
+		position = player.play();
 		interface.setChip(position, player.getColor());
 	}
 }
