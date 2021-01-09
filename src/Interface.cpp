@@ -35,11 +35,10 @@ void Interface::drawInterface() {
 }
 
 void Interface::setChip(float const & position, std::string const & color) {
-    std::array<std::array<std::string, COLS>, ROWS> chipPosition;
-
-    for (auto i{0}; i < ROWS; i++) {
-        if (chipPosition[position][i] != "O") {
-            chipPosition[position][i] = color + "O" + ANSI_COLOR_RESET;
+    for (int i{ROWS - 1}; i >= 0; i--) {
+        if (grids[i][position] == "O") {
+            grids[i][position] = color + "O" + ANSI_COLOR_RESET;
+            break;
         }
     }
 }

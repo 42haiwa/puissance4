@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Interface.h"
 #include "Player.h"
+#include "constantes.h"
 
 /*
  *		Task:
@@ -13,7 +14,7 @@ int main(void) {
 	auto player = Player{};
 	auto position{0};
 
-	std::cout << "Bienvenue au puissance 4 !" << std::endl;
+	std::cout << ANSI_COLOR_GREEN << "Bienvenue au puissance 4 !" << std::endl;
 	std::cout << std::endl;
 
 	while (true) {
