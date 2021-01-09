@@ -5,8 +5,7 @@
 
 /*
  *		Task:
- *			- Add play systeme
- *			- Add game loop
+ *			- Make ia
  */
 
 int main(void) {
