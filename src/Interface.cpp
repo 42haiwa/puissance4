@@ -11,7 +11,11 @@ Interface::Interface() {
 }
 
 void Interface::drawInterface() {
-    system("clear");
+    #ifdef WINDOWS
+        system("cls");
+    #else
+        system("clear");
+    #endif
 
     for (auto i{0}; i < COLS; i++) {
         std::cout << " " << i << " ";
