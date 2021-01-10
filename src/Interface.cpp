@@ -53,3 +53,12 @@ void Interface::setChip(float const & position, std::string const & color) {
         }
     }
 }
+
+bool Interface::isColsComplete(int position) const {
+    for (auto i{0}; i < ROWS; i++) {
+        if (grids[i][position] == "O") {
+            return false;
+        }
+    }
+    return true;
+}

@@ -17,6 +17,7 @@ class Interface {
         Interface();
         void drawInterface();
         void setChip(float const &, std::string const &);
+        bool isColsComplete(int position) const;
 };
 
 #endif

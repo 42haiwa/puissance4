@@ -21,10 +21,16 @@ int main(void) {
 	while (true) {
 		interface.drawInterface();
 
-		position = player.play();
+		do {
+			position = player.play();
+		} while (interface.isColsComplete(position));
+
 		interface.setChip(position, player.getColor());
 
-		position = ia.play();
+		do {
+			position = ia.play();
+		} while (interface.isColsComplete(position));
+
 		interface.setChip(position, ia.getColor());
 	}
 }
