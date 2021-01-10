@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Interface.h"
 #include "Player.h"
-#include "IA.h"
+#include "Ia.h"
 #include "constantes.h"
 
 /*
@@ -13,7 +13,7 @@ int main(void) {
 	auto interface = Interface{};
 	auto player = Player{};
 	auto position{0};
-	auto ia = IA{};
+	auto ia = Ia{};
 
 	std::cout << ANSI_COLOR_GREEN << "Bienvenue au puissance 4 !" << std::endl;
 	std::cout << std::endl;
@@ -22,5 +22,7 @@ int main(void) {
 		interface.drawInterface();
 		position = player.play();
 		interface.setChip(position, player.getColor());
+		position = ia.play();
+		interface.setChip(position, ia.getColor());
 	}
 }
