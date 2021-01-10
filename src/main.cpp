@@ -15,13 +15,15 @@ int main(void) {
 	auto position{0};
 	auto ia = Ia{};
 
-	std::cout << ANSI_COLOR_GREEN << "Bienvenue au puissance 4 !" << std::endl;
+	std::cout << ANSI_COLOR_GREEN << "Bienvenue au puissance 4 !" << ANSI_COLOR_RESET << std::endl;
 	std::cout << std::endl;
 
 	while (true) {
 		interface.drawInterface();
+
 		position = player.play();
 		interface.setChip(position, player.getColor());
+
 		position = ia.play();
 		interface.setChip(position, ia.getColor());
 	}
