@@ -6,7 +6,7 @@
 
 /*
  *		Task:
- *			- Make ia
+ *			- Win detection
  */
 
 int main(void) {
